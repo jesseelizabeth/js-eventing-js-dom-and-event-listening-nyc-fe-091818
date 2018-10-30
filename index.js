@@ -18,3 +18,17 @@ function onKeyDown(event) {
 }
 
 input.addEventListener('keydown', onKeyDown)
+
+// 1. Get our input
+const divs = document.querySelectorAll('div')
+
+// 2. Add an event listener 
+function onDivClick(event) {
+  console.log(event)
+}
+
+for (let div of divs) {
+  div.addEventListener('click', onDivClick)
+}
+
+
