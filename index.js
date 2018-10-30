@@ -24,7 +24,7 @@ const divs = document.querySelectorAll('div')
 
 // 2. Add an event listener 
 function onDivClick(event) {
-  event.stopPropagation()
+  event.stopPropagation() // prevents bubbling
   console.log(this.firstChild.nodeValue.trim() + ' bubbled')
 }
 
