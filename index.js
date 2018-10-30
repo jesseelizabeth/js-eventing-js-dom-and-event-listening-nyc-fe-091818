@@ -7,3 +7,6 @@ function onClick() {
 }
 
 main.addEventListener('click', onClick)
+
+// 1. Get our input 
+const input = document.querySelector('input')
