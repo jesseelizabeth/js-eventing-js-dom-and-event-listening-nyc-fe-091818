@@ -24,7 +24,8 @@ const divs = document.querySelectorAll('div')
 
 // 2. Add an event listener 
 function onDivClick(event) {
-  console.log(event)
+  event.stopPropagation()
+  console.log(this.firstChild.nodeValue.trim() + ' bubbled')
 }
 
 for (let div of divs) {
