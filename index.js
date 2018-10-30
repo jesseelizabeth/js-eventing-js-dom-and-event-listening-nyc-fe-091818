@@ -14,7 +14,7 @@ const input = document.querySelector('input')
 // 2. Add an event listener
 function onKeyDown(event) {
   if (event.which === 74)
-    alert('what the j')
+    event.preventDefault()
 }
 
 input.addEventListener('keydown', onKeyDown)
